@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+    font-family: "Comic Sans MS", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://i2.wp.com/jooinn.com/images/blue-sky-108.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.weather__block {
+    width: 350px;
+    max-height: 400px;
+    background-color: #ffffff50;
+    border-radius: 20px;
+    padding: 20px 15px;
+    background-image: url("https://img.freepik.com/free-vector/cloud-sky-cartoon-background-blue-sky-with-white-clouds-poster-or-flyer-cloudscape-panorama-pattern-seamless-texture_176411-732.jpg?size=626&ext=jpg");
 }
 
-.App-link {
-  color: #61dafb;
+
+.weather__form {
+    display: flex;
+    column-gap: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather__form__input {
+    width: calc(60% - 5px);
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Comic Sans MS", sans-serif;
+    outline: none;
+    padding-left: 15px;
+
+}
+
+.weather__form__button {
+    width: calc(40% - 5px);
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: "Comic Sans MS", sans-serif;
+    background: linear-gradient(90deg, rgba(10,151,255,1) 0%, rgba(110,218,221,1) 50%, rgba(10,151,255,1) 100%);
+}
+
+.weather__form__button:hover {
+    background-color: firebrick;
+}
+
+.weather__defaultText {
+    margin-left: 25px;
+}
+
+.weather__infoBlock__top {
+    display: flex;
+    padding: 7px 0;
+    justify-content: space-between;
+}
+
+.weather__time{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.weather__type{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.weather__type{
+    font-size: 18px;
+    font-style: italic;
+}
+
+.weather__city{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.weather__temp{
+    display: flex;
+    align-items: center;
+}
+
+.weather__deg{
+    font-size: 40px;
+}
+
+.weather__sunrise{
+    margin-bottom: 7px;
 }
